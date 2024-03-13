@@ -1,0 +1,28 @@
+div[data-alias="header"]
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    background-color: black;
+    color: white;
+
+    text-align: center;
+	width: 100%
+}
+
+div[data-alias="path"]
+{
+    padding: 1em;
+
+    font-size: 1.5em;
+}
+
+div[data-alias="path"]:hover
+{
+    background: dodgerblue;
+}
+
+div[data-alias="path"] > a
+{
+    text-decoration: none;
+}
