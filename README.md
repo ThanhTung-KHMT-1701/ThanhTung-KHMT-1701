@@ -8,5 +8,3 @@
 >Chúng tôi sẽ làm cho việc **học ngôn ngữ** (hiện tại là **tiếng Anh**) trở nên thú vị, hào hứng và hiệu quả hơn.
 
 >**Nupakachi...**
-# Contact us
-<center>ThanhTung: <a color="dodgerblue">dnu.khmt.1701.1771040029@gmail.com</front> </center>
