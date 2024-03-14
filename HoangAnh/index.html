@@ -1,0 +1,1131 @@
+<html>
+    <head>
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            body{
+                background-color: RGB(91, 94, 166);
+            }
+            div[id^="popup"]{
+                position: fixed;
+                width: 450px;
+                height: 250px;
+                background: white;
+                border: 5px solid black;
+                padding: 10px;
+                margin: auto;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                text-align: center;
+                z-index: 100;
+                display: none;
+            }
+            img{
+                border-width: 4px;
+                border-style: solid;
+                border-radius: 10px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 100%;
+            }
+            button{
+                scale: 200%;
+                position: relative;
+                top: 80px;
+            }
+            #question{
+                position: relative;
+                width: fit-content;
+                text-decoration: underline;
+                margin-left: auto;
+                margin-right: auto;
+                font-size: 2em;
+            }
+            div>h1{
+                position: relative;
+                top: 20px;
+                font-size: 32px;
+            }
+            
+            @media screen and (max-width: 820px){
+                #quesiton{
+                    font-size: 1.5em;
+                }
+            }
+            @media screen and (max-width: 450px){
+                #quesiton{
+                    font-size: 1.1em;
+                }
+                div[id^="popup"]{
+                    width: 250px;
+                    height: 200px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="question">1. Click at Backpack or Wallets
+        <img class="quiz1" src="bags.png" usemap="#quiz1"/> </h1>
+        <h1 id="question">2. Click at Wheelchair or Bench
+        <img class="quiz2" src="chair.png" usemap="#quiz2"/></h1>
+        <h1 id="question">3. Click at Vacuum Cleaner or Bucket
+        <img class="quiz3" src="cleaning.png" usemap="#quiz3"/></h1>
+        <h1 id="question">4. Click at Lawn Mower or Shovel
+        <img class="quiz4" src="gardening.png" usemap="#quiz4"/></h1>
+        <h1 id="question">5. Click at Thyme or sage
+        <img class="quiz5" src="herb.png" usemap="#quiz5"/></h1>
+        <map name="quiz1">
+            <area id="suitcase" alt="suitcase" href="#" coords="17,9,166,122" shape="rect">
+            <area id="dufflelbag" alt="dufflelbag" href="#" coords="231,24,354,119" shape="rect">
+            <area id="backpack" alt="backpack" href="#" coords="422,18,503,119" shape="rect">
+            <area id="totebag" alt="totebag" title="totebag" href="#" coords="582,13,663,112" shape="rect">
+            <area id="briefcase" alt="briefcase" href="#" coords="16,151,149,267" shape="rect">
+            <area id="purse" alt="purse" href="#" coords="196,173,286,262" shape="rect">
+            <area id="clutchbag" alt="clutchbag" href="#" coords="351,199,464,255" shape="rect">
+            <area id="grocerybag" alt="grocerybag" href="#" coords="509,130,570,252" shape="rect">
+            <area id="fannypack" alt="fannypack" href="#" coords="13,297,120,372" shape="rect">
+            <area id="changepurse" alt="changepurse" href="#" coords="196,310,252,373" shape="rect">
+            <area id="wallets" alt="wallets" href="#" coords="285,306,354,383" shape="rect">
+            <area id="billfolds" alt="billfolds" href="#" coords="380,314,479,374" shape="rect">
+            <area id="trashbag" alt="trashbag" href="#" coords="554,269,666,359" shape="rect">
+        </map>
+        <div id="popup1">
+            <h1>Câu trả lời sai.</h1>
+            <button id="close1">Đóng</button>
+        </div>
+        <div id="popup2">
+            <h1>Câu trả lời sai.</h1>
+            <button id="close2">Đóng</button>
+        </div>
+        <div id="popup3">
+            <h1>Câu trả lời hoàn toàn chính xác.<br> Đáp án: Backpack</h1>
+            <button id="close3">Đóng</button>
+        </div>
+        <div id="popup4">
+            <h1>Câu trả lời sai.</h1>
+            <button id="close4">Đóng</button>
+        </div>
+        <div id="popup5">
+            <h1>Câu trả lời sai.</h1>
+            <button id="close5">Đóng</button>
+        </div>
+        <div id="popup6">
+            <h1>Câu trả lời sai.</h1>
+            <button id="close6">Đóng</button>
+        </div>
+        <div id="popup7">
+            <h1>Câu trả lời sai.</h1>
+            <button id="close7">Đóng</button>
+        </div>
+        <div id="popup8">
+            <h1>Câu trả lời sai.</h1>
+            <button id="close8">Đóng</button>
+        </div>
+        <div id="popup9">
+            <h1>Câu trả lời sai.</h1>
+            <button id="close9">Đóng</button>
+        </div>
+        <div id="popup10">
+            <h1>Câu trả lời sai.</h1>
+            <button id="close10">Đóng</button>
+        </div>
+        <div id="popup11">
+            <h1>Câu trả lời hoàn toàn chính xác.<br>Đáp án: Wallets</h1>
+            <button id="close11">Đóng</button>
+        </div>
+        <div id="popup12">
+            <h1>Câu trả lời sai.</h1>
+            <button id="close12">Đóng</button>
+        </div>
+        <div id="popup13">
+            <h1>Câu trả lời sai.</h1>
+            <button id="close13">Đóng</button>
+        </div>
+        <map name="quiz2">
+            <area id="chair" alt="chair" href="#" coords="43,5,112,102" shape="rect">
+            <area id="armchair" alt="armchair" href="#" coords="145,26,235,101" shape="rect">
+            <area id="rockingchair" alt="rockingchair" href="#" coords="267,5,346,101" shape="rect">
+            <area id="stool" alt="stool" href="#" coords="378,25,430,108" shape="rect">
+            <area id="carseat" alt="carseat" href="#" coords="445,19,512,101" shape="rect">
+            <area id="wheelchair" alt="wheelchair" href="#" coords="534,7,619,106" shape="rect">
+            <area id="sofa" alt="sofa" href="#" coords="46,155,178,232" shape="rect">
+            <area id="recliner" alt="recliner" href="#" coords="239,138,342,245" shape="rect">
+            <area id="chaiselongue" alt="chaiselongue" href="#" coords="391,147,526,233" shape="rect">
+            <area id="swivelchair" alt="swivelchair" href="#" coords="586,138,647,237" shape="rect">
+            <area id="deckchair" alt="deckchair" href="#" coords="42,283,135,373" shape="rect">
+            <area id="directorschair" alt="directorschair" href="#" coords="170,287,239,377" shape="rect">
+            <area id="lounger" alt="lounger" href="#" coords="274,265,377,377" shape="rect">
+            <area id="bench" alt="bench" href="#" coords="409,292,526,381" shape="rect">
+            <area id="highchair" alt="highchair" href="#" coords="555,274,616,378" shape="rect">
+        </map>
+        <div id="popup14">
+            <h1>Câu trả lời sai.</h1>
+            <button id="close14">Đóng</button>
+        </div>
+        <div id="popup15">
+            <h1>Câu trả lời sai.</h1>
+            <button id="close15">Đóng</button>
+        </div>
+        <div id="popup16">
+            <h1>Câu trả lời sai.</h1>
+            <button id="close16">Đóng</button>
+        </div>
+        <div id="popup17">
+            <h1>Câu trả lời sai.</h1>
+            <button id="close17">Đóng</button>
+        </div>
+        <div id="popup18">
+            <h1>Câu trả lời sai.</h1>
+            <button id="close18">Đóng</button>
+        </div>
+        <div id="popup19">
+            <h1>Câu trả lời hoàn toàn chính xác.<br>Đáp án: Wheelchair</h1>
+            <button id="close19">Đóng</button>
+        </div>
+        <div id="popup20">
+            <h1>Câu trả lời sai.</h1>
+            <button id="close20">Đóng</button>
+        </div>
+        <div id="popup21">
+            <h1>Câu trả lời sai.</h1>
+            <button id="close21">Đóng</button>
+        </div>
+        <div id="popup22">
+            <h1>Câu trả lời sai.</h1>
+            <button id="close22">Đóng</button>
+        </div>
+        <div id="popup23">
+            <h1>Câu trả lời sai.</h1>
+            <button id="close23">Đóng</button>
+        </div>
+        <div id="popup24">
+            <h1>Câu trả lời sai.</h1>
+            <button id="close24">Đóng</button>
+        </div>
+        <div id="popup25">
+            <h1>Câu trả lời sai.</h1>
+            <button id="close25">Đóng</button>
+        </div>
+        <div id="popup26">
+            <h1>Câu trả lời sai.</h1>
+            <button id="close26">Đóng</button>
+        </div>
+        <div id="popup27">
+            <h1>Câu trả lời hoàn toàn chính xác.<br>Đáp án: Bench</h1>
+            <button id="close27">Đóng</button>
+        </div>
+        <div id="popup28">
+            <h1>Câu trả lời sai.</h1>
+            <button id="close28">Đóng</button>
+        </div>
+        <map name="quiz3">
+            <area id="broom" alt="broom" href="#" coords="65,1,89,194" shape="rect">
+            <area id="squeegeemop" alt="squeegeemop" href="#" coords="139,11,160,197" shape="rect">
+            <area id="mop" alt="mop" href="#" coords="204,17,234,192" shape="rect">
+            <area id="vacuum" alt="vacuum" href="#" coords="270,14,322,190" shape="rect">
+            <area id="squeegee" alt="squeegee" href="#" coords="342,15,445,78" shape="rect">
+            <area id="sponge" alt="sponge" href="#" coords="461,58,523,94" shape="rect">
+            <area id="featherduster" alt="featherduster"  href="#" coords="538,19,613,108" shape="rect">
+            <area id="bucket" alt="bucket"  href="#" coords="373,109,424,189" shape="rect">
+            <area id="dustpanandduster" alt="dustpanandduster" href="#" coords="476,127,592,194" shape="rect">
+            <area id="dishwashing" alt="dishwashing"  href="#" coords="54,262,92,360" shape="rect">
+            <area id="dishtowel" alt="dishtowel"  href="#" coords="116,276,189,358" shape="rect">
+            <area id="ironingboard" alt="ironingboard" href="#" coords="214,238,330,388" shape="rect">
+            <area id="scrubbrush" alt="scrubbrush"href="#" coords="351,296,411,352" shape="rect">
+            <area id="cloths" alt="cloths"  href="#" coords="432,289,506,352" shape="rect">
+            <area id="rubbergloves" alt="rubbergloves" href="#" coords="531,306,631,359" shape="rect">
+        </map>
+        <div id="popup29">
+            <h1>Câu trả lời sai.</h1>
+            <button id="close29">Đóng</button>
+        </div>
+        <div id="popup30">
+            <h1>Câu trả lời sai.</h1>
+            <button id="close30">Đóng</button>
+        </div>
+        <div id="popup31">
+            <h1>Câu trả lời sai.</h1>
+            <button id="close31">Đóng</button>
+        </div>
+        <div id="popup32">
+            <h1>Câu trả lời hoàn toàn chính xác.<br> Đáp án: Vacuum Cleaner</h1>
+            <button id="close32">Đóng</button>
+        </div>
+        <div id="popup33">
+            <h1>Câu trả lời sai.</h1>
+            <button id="close33">Đóng</button>
+        </div>
+        <div id="popup34">
+            <h1>Câu trả lời sai.</h1>
+            <button id="close34">Đóng</button>
+        </div>
+        <div id="popup35">
+            <h1>Câu trả lời sai.</h1>
+            <button id="close35">Đóng</button>
+        </div>
+        <div id="popup36">
+            <h1>Câu trả lời hoàn toàn chính xác.<br> Đáp án: Bucket</h1>
+            <button id="close36">Đóng</button>
+        </div>
+        <div id="popup37">
+            <h1>Câu trả lời sai.</h1>
+            <button id="close37">Đóng</button>
+        </div>
+        <div id="popup38">
+            <h1>Câu trả lời sai.</h1>
+            <button id="close38">Đóng</button>
+        </div>
+        <div id="popup39">
+            <h1>Câu trả lời sai.</h1>
+            <button id="close39">Đóng</button>
+        </div>
+        <div id="popup40">
+            <h1>Câu trả lời sai.</h1>
+            <button id="close40">Đóng</button>
+        </div>
+        <div id="popup41">
+            <h1>Câu trả lời sai.</h1>
+            <button id="close41">Đóng</button>
+        </div>
+        <div id="popup42">
+            <h1>Câu trả lời sai.</h1>
+            <button id="close42">Đóng</button>
+        </div>
+        <div id="popup43">
+            <h1>Câu trả lời sai.</h1>
+            <button id="close43">Đóng</button>
+        </div>
+        <map name="quiz4">
+            <area id="rakes" alt="rakes" href="#" coords="78,-1,175,208" shape="rect">
+            <area id="fork" alt="fork" href="#" coords="216,9,250,208" shape="rect">
+            <area id="spade" alt="spade"  href="#" coords="282,8,314,207" shape="rect">
+            <area id="shovel" alt="shovel"  href="#" coords="349,8,377,206" shape="rect">
+            <area id="hoe" alt="hoe"  href="#" coords="409,7,427,207" shape="rect">
+            <area id="shears" alt="shears"  href="#" coords="455,13,595,103" shape="rect">
+            <area id="handfork" alt="handfork"  href="#" coords="485,124,509,205" shape="rect">
+            <area id="trowel" alt="trowel"  href="#" coords="541,124,565,207" shape="rect">
+            <area id="axe" alt="axe"  href="#" coords="605,65,677,202" shape="rect">
+            <area id="lawnmower" alt="lawnmower"  href="#" coords="21,219,139,381" shape="rect">
+            <area id="wheelbarrow" alt="wheelbarrow"  href="#" coords="158,284,306,379" shape="rect">
+            <area id="hose" alt="hose" href="#" coords="336,295,424,378" shape="rect">
+            <area id="wateringcan" alt="wateringcan"  href="#" coords="462,294,547,379" shape="rect">
+            <area id="sprinkler" alt="sprinkler" href="#" coords="579,297,683,382" shape="rect">
+        </map>
+        <div id="popup44">
+            <h1>Câu trả lời sai.</h1>
+            <button id="close44">Đóng</button>
+        </div>
+        <div id="popup45">
+            <h1>Câu trả lời sai.</h1>
+            <button id="close45">Đóng</button>
+        </div>
+        <div id="popup46">
+            <h1>Câu trả lời sai.</h1>
+            <button id="close46">Đóng</button>
+        </div>
+        <div id="popup47">
+            <h1>Câu trả lời hoàn toàn chính xác.<br> Đáp án: Shovel</h1>
+            <button id="close47">Đóng</button>
+        </div>
+        <div id="popup48">
+            <h1>Câu trả lời sai.</h1>
+            <button id="close48">Đóng</button>
+        </div>
+        <div id="popup49">
+            <h1>Câu trả lời sai.</h1>
+            <button id="close49">Đóng</button>
+        </div>
+        <div id="popup50">
+            <h1>Câu trả lời sai.</h1>
+            <button id="close50">Đóng</button>
+        </div>
+        <div id="popup51">
+            <h1>Câu trả lời sai.</h1>
+            <button id="close51">Đóng</button>
+        </div>
+        <div id="popup52">
+            <h1>Câu trả lời sai.</h1>
+            <button id="close52">Đóng</button>
+        </div>
+        <div id="popup53">
+            <h1>Câu trả lời hoàn toàn chính xác.<br> Đáp án: Lawn Mower</h1>
+            <button id="close53">Đóng</button>
+        </div>
+        <div id="popup54">
+            <h1>Câu trả lời sai.</h1>
+            <button id="close54">Đóng</button>
+        </div>
+        <div id="popup55">
+            <h1>Câu trả lời sai.</h1>
+            <button id="close55">Đóng</button>
+        </div>
+        <div id="popup56">
+            <h1>Câu trả lời sai.</h1>
+            <button id="close56">Đóng</button>
+        </div>
+        <div id="popup57">
+            <h1>Câu trả lời sai.</h1>
+            <button id="close57">Đóng</button>
+        </div>
+        <map name="quiz5">
+            <area id="bay" alt="bay"  href="#" coords="22,80,97,176" shape="rect">
+            <area id="sage" alt="sage"  href="#" coords="148,77,197,170" shape="rect">
+            <area id="basil" alt="basil"  href="#" coords="244,97,328,170" shape="rect">
+            <area id="oregano" alt="oregano"  href="#" coords="369,90,426,173" shape="rect">
+            <area id="mint" alt="mint"  href="#" coords="466,91,562,177" shape="rect">
+            <area id="parsley" alt="parsley"  href="#" coords="591,104,673,173" shape="rect">
+            <area id="thyme" alt="thyme"  href="#" coords="14,216,105,298" shape="rect">
+            <area id="rosemary" alt="rosemary"  href="#" coords="155,211,221,304" shape="rect">
+            <area id="dill" alt="dill" href="#" coords="266,200,323,301" shape="rect">
+            <area id="tarragon" alt="tarragon"  href="#" coords="383,214,429,299" shape="rect">
+            <area id="chives" alt="chives"  href="#" coords="484,209,534,301" shape="rect">
+            <area id="cilantro" alt="cilantro" href="#" coords="603,209,659,304" shape="rect">
+        </map>
+        <div id="popup58">
+            <h1>Câu trả lời sai.</h1>
+            <button id="close58">Đóng</button>
+        </div>
+        <div id="popup59">
+            <h1>Câu trả lời hoàn toàn chính xác.<br> Đáp án: Sage</h1>
+            <button id="close59">Đóng</button>
+        </div>
+        <div id="popup60">
+            <h1>Câu trả lời sai.</h1>
+            <button id="close60">Đóng</button>
+        </div>
+        <div id="popup61">
+            <h1>Câu trả lời sai.</h1>
+            <button id="close61">Đóng</button>
+        </div>
+        <div id="popup62">
+            <h1>Câu trả lời sai.</h1>
+            <button id="close62">Đóng</button>
+        </div>
+        <div id="popup63">
+            <h1>Câu trả lời sai.</h1>
+            <button id="close63">Đóng</button>
+        </div>
+        <div id="popup64">
+            <h1>Câu trả lời hoàn toàn chính xác.<br> Đáp án: Thyme</h1>
+            <button id="close64">Đóng</button>
+        </div>
+        <div id="popup65">
+            <h1>Câu trả lời sai.</h1>
+            <button id="close65">Đóng</button>
+        </div>
+        <div id="popup66">
+            <h1>Câu trả lời sai.</h1>
+            <button id="close66">Đóng</button>
+        </div>
+        <div id="popup67">
+            <h1>Câu trả lời sai.</h1>
+            <button id="close67">Đóng</button>
+        </div>
+        <div id="popup68">
+            <h1>Câu trả lời sai.</h1>
+            <button id="close68">Đóng</button>
+        </div>
+        <div id="popup69">
+            <h1>Câu trả lời sai.</h1>
+            <button id="close69">Đóng</button>
+        </div>
+        <script>
+            var popupLink1 = document.getElementById("suitcase");
+            var popupWindow1 = document.getElementById("popup1");
+            var closeButton1 = document.getElementById("close1");
+            popupLink1.addEventListener("click", function() {
+              event.preventDefault();
+              popupWindow1.style.display = "block";
+            });
+            closeButton1.addEventListener("click", function() {
+              popupWindow1.style.display = "none";
+        });
+            var popupLink2 = document.getElementById("dufflelbag");
+            var popupWindow2 = document.getElementById("popup2");
+            var closeButton2 = document.getElementById("close2");
+            popupLink2.addEventListener("click", function() {
+              event.preventDefault();
+              popupWindow2.style.display = "block";
+            });
+            closeButton2.addEventListener("click", function() {
+              popupWindow2.style.display = "none";
+        });
+        var popupLink3 = document.getElementById("backpack");
+            var popupWindow3 = document.getElementById("popup3");
+            var closeButton3 = document.getElementById("close3");
+            popupLink3.addEventListener("click", function() {
+              event.preventDefault();
+              popupWindow3.style.display = "block";
+            });
+            closeButton3.addEventListener("click", function() {
+              popupWindow3.style.display = "none";
+        });
+        var popupLink4 = document.getElementById("totebag");
+            var popupWindow4 = document.getElementById("popup4");
+            var closeButton4 = document.getElementById("close4");
+            popupLink4.addEventListener("click", function() {
+              event.preventDefault();
+              popupWindow4.style.display = "block";
+            });
+            closeButton4.addEventListener("click", function() {
+              popupWindow4.style.display = "none";
+        });
+        var popupLink5 = document.getElementById("briefcase");
+            var popupWindow5 = document.getElementById("popup5");
+            var closeButton5 = document.getElementById("close5");
+            popupLink5.addEventListener("click", function() {
+              event.preventDefault();
+              popupWindow5.style.display = "block";
+            });
+            closeButton5.addEventListener("click", function() {
+              popupWindow5.style.display = "none";
+        });
+        var popupLink6 = document.getElementById("purse");
+            var popupWindow6 = document.getElementById("popup6");
+            var closeButton6 = document.getElementById("close6");
+            popupLink6.addEventListener("click", function() {
+              event.preventDefault();
+              popupWindow6.style.display = "block";
+            });
+            closeButton6.addEventListener("click", function() {
+              popupWindow6.style.display = "none";
+        });
+        var popupLink7 = document.getElementById("clutchbag");
+            var popupWindow7 = document.getElementById("popup7");
+            var closeButton7 = document.getElementById("close7");
+            popupLink7.addEventListener("click", function() {
+              event.preventDefault();
+              popupWindow7.style.display = "block";
+            });
+            closeButton7.addEventListener("click", function() {
+              popupWindow7.style.display = "none";
+        });
+        var popupLink8 = document.getElementById("grocerybag");
+            var popupWindow8 = document.getElementById("popup8");
+            var closeButton8 = document.getElementById("close8");
+            popupLink8.addEventListener("click", function() {
+              event.preventDefault();
+              popupWindow8.style.display = "block";
+            });
+            closeButton8.addEventListener("click", function() {
+              popupWindow8.style.display = "none";
+        });
+        var popupLink9 = document.getElementById("fannypack");
+            var popupWindow9 = document.getElementById("popup9");
+            var closeButton9 = document.getElementById("close9");
+            popupLink9.addEventListener("click", function() {
+              event.preventDefault();
+              popupWindow9.style.display = "block";
+            });
+            closeButton9.addEventListener("click", function() {
+              popupWindow9.style.display = "none";
+        });
+        var popupLink10 = document.getElementById("changepurse");
+            var popupWindow10 = document.getElementById("popup10");
+            var closeButton10 = document.getElementById("close10");
+            popupLink10.addEventListener("click", function() {
+              event.preventDefault();
+              popupWindow10.style.display = "block";
+            });
+            closeButton10.addEventListener("click", function() {
+              popupWindow10.style.display = "none";
+        });
+        var popupLink11 = document.getElementById("wallets");
+            var popupWindow11 = document.getElementById("popup11");
+            var closeButton11 = document.getElementById("close11");
+            popupLink11.addEventListener("click", function() {
+              event.preventDefault();
+              popupWindow11.style.display = "block";
+            });
+            closeButton11.addEventListener("click", function() {
+              popupWindow11.style.display = "none";
+        });
+        var popupLink12 = document.getElementById("billfolds");
+            var popupWindow12 = document.getElementById("popup12");
+            var closeButton12 = document.getElementById("close12");
+            popupLink12.addEventListener("click", function() {
+              event.preventDefault();
+              popupWindow12.style.display = "block";
+            });
+            closeButton12.addEventListener("click", function() {
+              popupWindow12.style.display = "none";
+        });
+        var popupLink13 = document.getElementById("trashbag");
+            var popupWindow13 = document.getElementById("popup13");
+            var closeButton13 = document.getElementById("close13");
+            popupLink13.addEventListener("click", function() {
+              event.preventDefault();
+              popupWindow13.style.display = "block";
+            });
+            closeButton13.addEventListener("click", function() {
+              popupWindow13.style.display = "none";
+        });
+        var popupLink14 = document.getElementById("chair");
+            var popupWindow14 = document.getElementById("popup14");
+            var closeButton14 = document.getElementById("close14");
+            popupLink14.addEventListener("click", function() {
+              event.preventDefault();
+              popupWindow14.style.display = "block";
+            });
+            closeButton14.addEventListener("click", function() {
+              popupWindow14.style.display = "none";
+        });
+            var popupLink15 = document.getElementById("armchair");
+            var popupWindow15 = document.getElementById("popup15");
+            var closeButton15 = document.getElementById("close15");
+            popupLink15.addEventListener("click", function() {
+              event.preventDefault();
+              popupWindow15.style.display = "block";
+            });
+            closeButton15.addEventListener("click", function() {
+              popupWindow15.style.display = "none";
+        });
+        var popupLink16 = document.getElementById("rockingchair");
+            var popupWindow16 = document.getElementById("popup16");
+            var closeButton16 = document.getElementById("close16");
+            popupLink16.addEventListener("click", function() {
+              event.preventDefault();
+              popupWindow16.style.display = "block";
+            });
+            closeButton16.addEventListener("click", function() {
+              popupWindow16.style.display = "none";
+        });
+        var popupLink17 = document.getElementById("stool");
+            var popupWindow17 = document.getElementById("popup17");
+            var closeButton17 = document.getElementById("close17");
+            popupLink17.addEventListener("click", function() {
+              event.preventDefault();
+              popupWindow17.style.display = "block";
+            });
+            closeButton17.addEventListener("click", function() {
+              popupWindow17.style.display = "none";
+        });
+        var popupLink18 = document.getElementById("carseat");
+            var popupWindow18 = document.getElementById("popup18");
+            var closeButton18 = document.getElementById("close18");
+            popupLink18.addEventListener("click", function() {
+              event.preventDefault();
+              popupWindow18.style.display = "block";
+            });
+            closeButton18.addEventListener("click", function() {
+              popupWindow18.style.display = "none";
+        });
+        var popupLink19 = document.getElementById("wheelchair");
+            var popupWindow19 = document.getElementById("popup19");
+            var closeButton19 = document.getElementById("close19");
+            popupLink19.addEventListener("click", function() {
+              event.preventDefault();
+              popupWindow19.style.display = "block";
+            });
+            closeButton19.addEventListener("click", function() {
+              popupWindow19.style.display = "none";
+        });
+        var popupLink20 = document.getElementById("sofa");
+            var popupWindow20 = document.getElementById("popup20");
+            var closeButton20 = document.getElementById("close20");
+            popupLink20.addEventListener("click", function() {
+              event.preventDefault();
+              popupWindow20.style.display = "block";
+            });
+            closeButton20.addEventListener("click", function() {
+              popupWindow20.style.display = "none";
+        });
+        var popupLink21 = document.getElementById("recliner");
+            var popupWindow21 = document.getElementById("popup21");
+            var closeButton21 = document.getElementById("close21");
+            popupLink21.addEventListener("click", function() {
+              event.preventDefault();
+              popupWindow21.style.display = "block";
+            });
+            closeButton21.addEventListener("click", function() {
+              popupWindow21.style.display = "none";
+        });
+        var popupLink22 = document.getElementById("chaiselongue");
+            var popupWindow22 = document.getElementById("popup22");
+            var closeButton22 = document.getElementById("close22");
+            popupLink22.addEventListener("click", function() {
+              event.preventDefault();
+              popupWindow22.style.display = "block";
+            });
+            closeButton22.addEventListener("click", function() {
+              popupWindow22.style.display = "none";
+        });
+        var popupLink23 = document.getElementById("swivelchair");
+            var popupWindow23 = document.getElementById("popup23");
+            var closeButton23 = document.getElementById("close23");
+            popupLink23.addEventListener("click", function() {
+              event.preventDefault();
+              popupWindow23.style.display = "block";
+            });
+            closeButton23.addEventListener("click", function() {
+              popupWindow23.style.display = "none";
+        });
+        var popupLink24 = document.getElementById("deckchair");
+            var popupWindow24 = document.getElementById("popup24");
+            var closeButton24 = document.getElementById("close24");
+            popupLink24.addEventListener("click", function() {
+              event.preventDefault();
+              popupWindow24.style.display = "block";
+            });
+            closeButton24.addEventListener("click", function() {
+              popupWindow24.style.display = "none";
+        });
+        var popupLink25 = document.getElementById("directorschair");
+            var popupWindow25 = document.getElementById("popup25");
+            var closeButton25 = document.getElementById("close25");
+            popupLink25.addEventListener("click", function() {
+              event.preventDefault();
+              popupWindow25.style.display = "block";
+            });
+            closeButton25.addEventListener("click", function() {
+              popupWindow25.style.display = "none";
+        });
+        var popupLink26 = document.getElementById("lounger");
+            var popupWindow26 = document.getElementById("popup26");
+            var closeButton26 = document.getElementById("close26");
+            popupLink26.addEventListener("click", function() {
+              event.preventDefault();
+              popupWindow26.style.display = "block";
+            });
+            closeButton26.addEventListener("click", function() {
+              popupWindow26.style.display = "none";
+        });
+        var popupLink27 = document.getElementById("bench");
+            var popupWindow27 = document.getElementById("popup27");
+            var closeButton27 = document.getElementById("close27");
+            popupLink27.addEventListener("click", function() {
+              event.preventDefault();
+              popupWindow27.style.display = "block";
+            });
+            closeButton27.addEventListener("click", function() {
+              popupWindow27.style.display = "none";
+        });
+        var popupLink28 = document.getElementById("highchair");
+            var popupWindow28 = document.getElementById("popup28");
+            var closeButton28 = document.getElementById("close28");
+            popupLink28.addEventListener("click", function() {
+              event.preventDefault();
+              popupWindow28.style.display = "block";
+            });
+            closeButton28.addEventListener("click", function() {
+              popupWindow28.style.display = "none";
+        });
+        var popupLink29 = document.getElementById("broom");
+            var popupWindow29 = document.getElementById("popup29");
+            var closeButton29 = document.getElementById("close29");
+            popupLink29.addEventListener("click", function() {
+                event.preventDefault();
+                popupWindow29.style.display = "block";
+            });
+            closeButton29.addEventListener("click", function() {
+                popupWindow29.style.display = "none";
+            });
+            var popupLink30 = document.getElementById("squeegeemop");
+            var popupWindow30 = document.getElementById("popup30");
+            var closeButton30 = document.getElementById("close30");
+            popupLink30.addEventListener("click", function() {
+                event.preventDefault();
+                popupWindow30.style.display = "block";
+            });
+            closeButton30.addEventListener("click", function() {
+                popupWindow30.style.display = "none";
+            });
+            var popupLink31 = document.getElementById("mop");
+            var popupWindow31 = document.getElementById("popup31");
+            var closeButton31 = document.getElementById("close31");
+            popupLink31.addEventListener("click", function() {
+                event.preventDefault();
+                popupWindow31.style.display = "block";
+            });
+            closeButton31.addEventListener("click", function() {
+                popupWindow31.style.display = "none";
+            });
+            var popupLink32 = document.getElementById("vacuum");
+            var popupWindow32 = document.getElementById("popup32");
+            var closeButton32 = document.getElementById("close32");
+            popupLink32.addEventListener("click", function() {
+                event.preventDefault();
+                popupWindow32.style.display = "block";
+            });
+            closeButton32.addEventListener("click", function() {
+                popupWindow32.style.display = "none";
+            });
+            var popupLink33 = document.getElementById("squeegee");
+            var popupWindow33 = document.getElementById("popup33");
+            var closeButton33 = document.getElementById("close33");
+            popupLink33.addEventListener("click", function() {
+                event.preventDefault();
+                popupWindow33.style.display = "block";
+            });
+            closeButton33.addEventListener("click", function() {
+                popupWindow33.style.display = "none";
+            });
+            var popupLink34 = document.getElementById("sponge");
+            var popupWindow34 = document.getElementById("popup34");
+            var closeButton34 = document.getElementById("close34");
+            popupLink34.addEventListener("click", function() {
+                event.preventDefault();
+                popupWindow34.style.display = "block";
+            });
+            closeButton34.addEventListener("click", function() {
+                popupWindow34.style.display = "none";
+            });
+            var popupLink35 = document.getElementById("featherduster");
+            var popupWindow35 = document.getElementById("popup35");
+            var closeButton35 = document.getElementById("close35");
+            popupLink35.addEventListener("click", function() {
+                event.preventDefault();
+                popupWindow35.style.display = "block";
+            });
+            closeButton35.addEventListener("click", function() {
+                popupWindow35.style.display = "none";
+            });
+            var popupLink36 = document.getElementById("bucket");
+            var popupWindow36 = document.getElementById("popup36");
+            var closeButton36 = document.getElementById("close36");
+            popupLink36.addEventListener("click", function() {
+                event.preventDefault();
+                popupWindow36.style.display = "block";
+            });
+            closeButton36.addEventListener("click", function() {
+                popupWindow36.style.display = "none";
+            });
+            var popupLink37 = document.getElementById("dustpanandduster");
+            var popupWindow37 = document.getElementById("popup37");
+            var closeButton37 = document.getElementById("close37");
+            popupLink37.addEventListener("click", function() {
+                event.preventDefault();
+                popupWindow37.style.display = "block";
+            });
+            closeButton37.addEventListener("click", function() {
+                popupWindow37.style.display = "none";
+            });
+            var popupLink38 = document.getElementById("dishwashing");
+            var popupWindow38 = document.getElementById("popup38");
+            var closeButton38 = document.getElementById("close38");
+            popupLink38.addEventListener("click", function() {
+                event.preventDefault();
+                popupWindow38.style.display = "block";
+            });
+            closeButton38.addEventListener("click", function() {
+                popupWindow38.style.display = "none";
+            });
+            var popupLink39 = document.getElementById("dishtowel");
+            var popupWindow39 = document.getElementById("popup39");
+            var closeButton39 = document.getElementById("close39");
+            popupLink39.addEventListener("click", function() {
+                event.preventDefault();
+                popupWindow39.style.display = "block";
+            });
+            closeButton39.addEventListener("click", function() {
+                popupWindow39.style.display = "none";
+            });
+            var popupLink40 = document.getElementById("ironingboard");
+            var popupWindow40 = document.getElementById("popup40");
+            var closeButton40 = document.getElementById("close40");
+            popupLink40.addEventListener("click", function() {
+                event.preventDefault();
+                popupWindow40.style.display = "block";
+            });
+            closeButton40.addEventListener("click", function() {
+                popupWindow40.style.display = "none";
+            });
+            var popupLink41 = document.getElementById("scrubbrush");
+            var popupWindow41 = document.getElementById("popup41");
+            var closeButton41 = document.getElementById("close41");
+            popupLink41.addEventListener("click", function() {
+                event.preventDefault();
+                popupWindow41.style.display = "block";
+            });
+            closeButton41.addEventListener("click", function() {
+                popupWindow41.style.display = "none";
+            });
+            var popupLink42 = document.getElementById("cloths");
+            var popupWindow42 = document.getElementById("popup42");
+            var closeButton42 = document.getElementById("close42");
+            popupLink42.addEventListener("click", function() {
+                event.preventDefault();
+                popupWindow42.style.display = "block";
+            });
+            closeButton42.addEventListener("click", function() {
+                popupWindow42.style.display = "none";
+            });
+            var popupLink43 = document.getElementById("rubbergloves");
+            var popupWindow43 = document.getElementById("popup43");
+            var closeButton43 = document.getElementById("close43");
+            popupLink43.addEventListener("click", function() {
+                event.preventDefault();
+                popupWindow43.style.display = "block";
+            });
+            closeButton43.addEventListener("click", function() {
+                popupWindow43.style.display = "none";
+            });
+
+            var popupLink44 = document.getElementById("rakes");
+            var popupWindow44 = document.getElementById("popup44");
+            var closeButton44 = document.getElementById("close44");
+            popupLink44.addEventListener("click", function() {
+                event.preventDefault();
+                popupWindow44.style.display = "block";
+            });
+            closeButton44.addEventListener("click", function() {
+                popupWindow44.style.display = "none";
+            });
+            var popupLink45 = document.getElementById("fork");
+            var popupWindow45 = document.getElementById("popup45");
+            var closeButton45 = document.getElementById("close45");
+            popupLink45.addEventListener("click", function() {
+                event.preventDefault();
+                popupWindow45.style.display = "block";
+            });
+            closeButton45.addEventListener("click", function() {
+                popupWindow45.style.display = "none";
+            });
+            var popupLink46 = document.getElementById("spade");
+            var popupWindow46 = document.getElementById("popup46");
+            var closeButton46 = document.getElementById("close46");
+            popupLink46.addEventListener("click", function() {
+                event.preventDefault();
+                popupWindow46.style.display = "block";
+            });
+            closeButton46.addEventListener("click", function() {
+                popupWindow46.style.display = "none";
+            });
+            var popupLink47 = document.getElementById("shovel");
+            var popupWindow47 = document.getElementById("popup47");
+            var closeButton47 = document.getElementById("close47");
+            popupLink47.addEventListener("click", function() {
+                event.preventDefault();
+                popupWindow47.style.display = "block";
+            });
+            closeButton47.addEventListener("click", function() {
+                popupWindow47.style.display = "none";
+            });
+            var popupLink48 = document.getElementById("hoe");
+            var popupWindow48 = document.getElementById("popup48");
+            var closeButton48 = document.getElementById("close48");
+            popupLink48.addEventListener("click", function() {
+                event.preventDefault();
+                popupWindow48.style.display = "block";
+            });
+            closeButton48.addEventListener("click", function() {
+                popupWindow48.style.display = "none";
+            });
+            var popupLink49 = document.getElementById("shears");
+            var popupWindow49 = document.getElementById("popup49");
+            var closeButton49 = document.getElementById("close49");
+            popupLink49.addEventListener("click", function() {
+                event.preventDefault();
+                popupWindow49.style.display = "block";
+            });
+            closeButton49.addEventListener("click", function() {
+                popupWindow49.style.display = "none";
+            });
+            var popupLink50 = document.getElementById("handfork");
+            var popupWindow50 = document.getElementById("popup50");
+            var closeButton50 = document.getElementById("close50");
+            popupLink50.addEventListener("click", function() {
+                event.preventDefault();
+                popupWindow50.style.display = "block";
+            });
+            closeButton50.addEventListener("click", function() {
+                popupWindow50.style.display = "none";
+            });
+            var popupLink51 = document.getElementById("trowel");
+            var popupWindow51 = document.getElementById("popup51");
+            var closeButton51 = document.getElementById("close51");
+            popupLink51.addEventListener("click", function() {
+                event.preventDefault();
+                popupWindow51.style.display = "block";
+            });
+            closeButton51.addEventListener("click", function() {
+                popupWindow51.style.display = "none";
+            });
+            var popupLink52 = document.getElementById("axe");
+            var popupWindow52 = document.getElementById("popup52");
+            var closeButton52 = document.getElementById("close52");
+            popupLink52.addEventListener("click", function() {
+                event.preventDefault();
+                popupWindow52.style.display = "block";
+            });
+            closeButton52.addEventListener("click", function() {
+                popupWindow52.style.display = "none";
+            });
+            var popupLink53 = document.getElementById("lawnmower");
+            var popupWindow53 = document.getElementById("popup53");
+            var closeButton53 = document.getElementById("close53");
+            popupLink53.addEventListener("click", function() {
+                event.preventDefault();
+                popupWindow53.style.display = "block";
+            });
+            closeButton53.addEventListener("click", function() {
+                popupWindow53.style.display = "none";
+            });
+            var popupLink54 = document.getElementById("wheelbarrow");
+            var popupWindow54 = document.getElementById("popup54");
+            var closeButton54 = document.getElementById("close54");
+            popupLink54.addEventListener("click", function() {
+                event.preventDefault();
+                popupWindow54.style.display = "block";
+            });
+            closeButton54.addEventListener("click", function() {
+                popupWindow54.style.display = "none";
+            });
+            var popupLink55 = document.getElementById("hose");
+            var popupWindow55 = document.getElementById("popup55");
+            var closeButton55 = document.getElementById("close55");
+            popupLink55.addEventListener("click", function() {
+                event.preventDefault();
+                popupWindow55.style.display = "block";
+            });
+            closeButton55.addEventListener("click", function() {
+                popupWindow55.style.display = "none";
+            });
+            var popupLink56 = document.getElementById("wateringcan");
+            var popupWindow56 = document.getElementById("popup56");
+            var closeButton56 = document.getElementById("close56");
+            popupLink56.addEventListener("click", function() {
+                event.preventDefault();
+                popupWindow56.style.display = "block";
+            });
+            closeButton56.addEventListener("click", function() {
+                popupWindow56.style.display = "none";
+            });
+            var popupLink57 = document.getElementById("sprinkler");
+            var popupWindow57 = document.getElementById("popup57");
+            var closeButton57 = document.getElementById("close57");
+            popupLink57.addEventListener("click", function() {
+                event.preventDefault();
+                popupWindow57.style.display = "block";
+            });
+            closeButton57.addEventListener("click", function() {
+                popupWindow57.style.display = "none";
+            });
+            var popupLink58 = document.getElementById("bay");
+            var popupWindow58 = document.getElementById("popup58");
+            var closeButton58 = document.getElementById("close58");
+            popupLink58.addEventListener("click", function() {
+                event.preventDefault();
+                popupWindow58.style.display = "block";
+            });
+            closeButton58.addEventListener("click", function() {
+                popupWindow58.style.display = "none";
+            });
+            var popupLink59 = document.getElementById("sage");
+            var popupWindow59 = document.getElementById("popup59");
+            var closeButton59 = document.getElementById("close59");
+            popupLink59.addEventListener("click", function() {
+                event.preventDefault();
+                popupWindow59.style.display = "block";
+            });
+            closeButton59.addEventListener("click", function() {
+                popupWindow59.style.display = "none";
+            });
+            var popupLink60 = document.getElementById("basil");
+            var popupWindow60 = document.getElementById("popup60");
+            var closeButton60 = document.getElementById("close60");
+            popupLink60.addEventListener("click", function() {
+                event.preventDefault();
+                popupWindow60.style.display = "block";
+            });
+            closeButton60.addEventListener("click", function() {
+                popupWindow60.style.display = "none";
+            });
+            var popupLink61 = document.getElementById("oregano");
+            var popupWindow61 = document.getElementById("popup61");
+            var closeButton61 = document.getElementById("close61");
+            popupLink61.addEventListener("click", function() {
+                event.preventDefault();
+                popupWindow61.style.display = "block";
+            });
+            closeButton61.addEventListener("click", function() {
+                popupWindow61.style.display = "none";
+            });
+            var popupLink62 = document.getElementById("mint");
+            var popupWindow62 = document.getElementById("popup62");
+            var closeButton62 = document.getElementById("close62");
+            popupLink62.addEventListener("click", function() {
+                event.preventDefault();
+                popupWindow62.style.display = "block";
+            });
+            closeButton62.addEventListener("click", function() {
+                popupWindow62.style.display = "none";
+            });
+            var popupLink63 = document.getElementById("parsley");
+            var popupWindow63 = document.getElementById("popup63");
+            var closeButton63 = document.getElementById("close63");
+            popupLink63.addEventListener("click", function() {
+                event.preventDefault();
+                popupWindow63.style.display = "block";
+            });
+            closeButton63.addEventListener("click", function() {
+                popupWindow63.style.display = "none";
+            });
+            var popupLink64 = document.getElementById("thyme");
+            var popupWindow64 = document.getElementById("popup64");
+            var closeButton64 = document.getElementById("close64");
+            popupLink64.addEventListener("click", function() {
+                event.preventDefault();
+                popupWindow64.style.display = "block";
+            });
+            closeButton64.addEventListener("click", function() {
+                popupWindow64.style.display = "none";
+            });
+            var popupLink65 = document.getElementById("rosemary");
+            var popupWindow65 = document.getElementById("popup65");
+            var closeButton65 = document.getElementById("close65");
+            popupLink65.addEventListener("click", function() {
+                event.preventDefault();
+                popupWindow65.style.display = "block";
+            });
+            closeButton65.addEventListener("click", function() {
+                popupWindow65.style.display = "none";
+            });
+            var popupLink66 = document.getElementById("dill");
+            var popupWindow66 = document.getElementById("popup66");
+            var closeButton66 = document.getElementById("close66");
+            popupLink66.addEventListener("click", function() {
+                event.preventDefault();
+                popupWindow66.style.display = "block";
+            });
+            closeButton66.addEventListener("click", function() {
+                popupWindow66.style.display = "none";
+            });
+            var popupLink67 = document.getElementById("tarragon");
+            var popupWindow67 = document.getElementById("popup67");
+            var closeButton67 = document.getElementById("close67");
+            popupLink67.addEventListener("click", function() {
+                event.preventDefault();
+                popupWindow67.style.display = "block";
+            });
+            closeButton67.addEventListener("click", function() {
+                popupWindow67.style.display = "none";
+            });
+            var popupLink68 = document.getElementById("chives");
+            var popupWindow68 = document.getElementById("popup68");
+            var closeButton68 = document.getElementById("close68");
+            popupLink68.addEventListener("click", function() {
+                event.preventDefault();
+                popupWindow68.style.display = "block";
+            });
+            closeButton68.addEventListener("click", function() {
+                popupWindow68.style.display = "none";
+            });
+            var popupLink69 = document.getElementById("cilantro");
+            var popupWindow69 = document.getElementById("popup69");
+            var closeButton69 = document.getElementById("close69");
+            popupLink69.addEventListener("click", function() {
+                event.preventDefault();
+                popupWindow69.style.display = "block";
+            });
+            closeButton69.addEventListener("click", function() {
+                popupWindow69.style.display = "none";
+            });
+          </script>
+    </body>
+</html>
+
+
