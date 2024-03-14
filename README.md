@@ -1,4 +1,2 @@
-Sinh viên: ThanhTung
-
-
-Lớp: Khoa học Máy tính - 1701
+###Author: ThanhTung
+###About me: Computer Science - 1701
