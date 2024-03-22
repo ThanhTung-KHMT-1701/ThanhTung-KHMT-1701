@@ -1,0 +1,68 @@
+div[data-alias="ThanhTung-game-02-container"]
+{
+    width: inherit;
+
+    display: grid;
+
+    grid-template-areas:
+        "L_03 L_01 L_01 L_01"
+        "L_03 STT  STT  STT"
+        "L_03 L_02 L_02 L_02"
+        "L_03 BTN BTN BTN";
+
+    grid-row-gap: calc(min(10px, 1%));
+    grid-template-columns: repeat(auto-fit, 1fr);
+}
+
+div[data-alias="L_01-container"]
+{
+    grid-area: L_01;
+}
+
+div[data-alias="STT-container"]
+{
+    grid-area: STT;
+}
+
+div[data-alias="L_02-container"]
+{
+    grid-area: L_02;
+}
+
+div[data-alias="L_03-container"]
+{
+    grid-area: L_03;
+
+    margin-right: calc(min(10px, 10%));
+}
+
+
+div[data-alias="L_01-container"], div[data-alias="L_02-container"], div[data-alias="STT-container"]
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+
+    /*border: 0.1em dashed gray;*/
+    /*border-radius: 10em;*/
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+div[data-alias="BUTTON"]
+{
+    grid-area: BTN;
+
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 1em;
+
+    background-color: darkblue;
+    color: white;
+
+    font-family: "Times New Roman", serif;
+    text-align: center;
+}
