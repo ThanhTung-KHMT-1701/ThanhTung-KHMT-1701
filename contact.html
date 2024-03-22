@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThanhTung-KHMT-1701</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main_header.css">
+    <link rel="stylesheet" href="main_body.css">
+    <link rel="stylesheet" href="main_footer.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+        <div data-alias="body">
+            <div data-alias="contact">
+                <fieldset>
+                    <legend>Thông tin về đội của chúng tôi</legend>
+                    <table data-alias="contact-table-information">
+                        <tr>
+                            <th>STT</th>
+                            <th>Mã số sinh viên</th>
+                            <th>Họ và tên</th>
+                            <th>Vai trò</th>
+                        </tr>
+                        <tr>
+                            <td>01</td>
+                            <td>1771040029</td>
+                            <td>Lưu Thanh Tùng</td>
+                            <td>Nhóm trưởng</td>
+                        </tr>
+                        <tr>
+                            <td>02</td>
+                            <td>1771040014</td>
+                            <td>Nguyễn Thị Liên Hoàn</td>
+                            <td>Thành viên</td>
+                        </tr>
+                        <tr>
+                            <td>01</td>
+                            <td>1771040002</td>
+                            <td>Nguyễn Hoàng Anh</td>
+                            <td>Thành viên</td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <br>
+                <!--  -->
+                <!--  -->
+                <fieldset>
+                    <legend>Gửi phản hồi cho chúng tôi</legend>
+                    <form action="" id="Form">
+                        <div style="margin: 10px; text-align: left;">
+                            <label for="Username_01">Họ và tên :</label>
+                            <input 
+                                type="text"
+                                name="Username_01"
+                            
+                                pattern="[a-z0-9]{8,}$"
+                                title="Yêu cầu tối thiểu 8 kí tự. Kí tự chỉ bao gồm chữ cái (a-z) và số (0-9)"
+        
+                                placeholder="Hãy nhập vào họ và tên của bạn"
+                                style="width: 350px; ;font-family: 'Times New Roman', Times, serif;">
+                        </div>
+                        <div data-explain="Gioitinh" style="margin: 10px; text-align: left;">
+                            <label for="DL_DataList">Giới tính :</label>
+                            <input list="DL_DataList">
+                            <datalist id="DL_DataList">
+                                <option value="Nam">
+                                <option value="Nữ">
+                            </datalist>
+                        </div>
+                        <div style="margin: 10px; text-align: left;">
+                            <label for="YES">Bạn có thích trang web của chúng tôi không?</label>
+                            YES <input type="radio" name="status" id="YES">
+                            NO <input  type="radio" name="status" id="YES">
+                        </div>
+                        <label for="ThangDanhGia" style="margin: 10px; text-align: left;">Mức độ hài lòng của bạn về trang web của chúng tôi</label>
+                        <input type="range" name="ThangDanhGia" id="ThangDanhGia" min="0" max="100" style="margin-left: 10px; width: 100%;">
+
+                        <input type="submit" value="SUBMIT" style="font-family: 'Times New Roman', Times, serif;">
+                    </form>
+                </fieldset>
+                <!--  -->
+                <!--  -->
+            </div>
+        </div>
+</body>
+</html>
