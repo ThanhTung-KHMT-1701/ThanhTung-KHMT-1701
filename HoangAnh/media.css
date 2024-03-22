@@ -1,0 +1,18 @@
+@media screen and (max-width: 820px){
+    #quesiton{
+        font-size: 1.2em;
+    }
+}
+@media screen and (max-width: 450px){
+    #quesiton{
+        font-size: 0.8em;
+    }
+    div[id^="popup"]{
+        width: 250px;
+        height: 200px;
+    }
+    button{
+        scale: 150%;
+        top: 70px;
+    }
+}
