@@ -9,7 +9,7 @@ div[data-alias="contact"]
 
 fieldset
 {
-    padding: 25px;
+    padding: calc(min(25px, 1%));
     margin-top: 25px;
     /* width: fit-content; */
 }
@@ -42,9 +42,19 @@ th
 
 input, option
 {
+    max-width: 200px;
+
     padding: 10px;
 
     font-family: 'Times New Roman', Times, serif;
+}
+
+input[type="submit"], input[type="range"]
+{
+    display: block;
+
+    margin-left: auto;
+    margin-right: auto;
 }
 
 input:focus, option :focus
@@ -52,4 +62,21 @@ input:focus, option :focus
     background-color: lightskyblue;
 
     outline: none;
+}
+
+@media screen
+{
+    *
+    {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1024px)
+{
+    *
+    {
+        padding: 5px;
+        font-size: 13px;
+    }
 }
