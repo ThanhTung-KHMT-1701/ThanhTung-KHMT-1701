@@ -11,5 +11,7 @@
 
 1. https://thanhtung-khmt-1701.github.io/ThanhTung-KHMT-1701/1771040029_ThanhTung/ThanhTung-game-01
 2. https://thanhtung-khmt-1701.github.io/ThanhTung-KHMT-1701/1771040029_ThanhTung/ThanhTung-game-02-00-type-01
-3. https://thanhtung-khmt-1701.github.io/ThanhTung-KHMT-1701/1771040002_HoangAnh/index.html
-4. https://thanhtung-khmt-1701.github.io/ThanhTung-KHMT-1701/1771040014_LienHoan/index.html
+3. https://thanhtung-khmt-1701.github.io/ThanhTung-KHMT-1701/1771040002_HoangAnh/huongdan.html
+4. https://thanhtung-khmt-1701.github.io/ThanhTung-KHMT-1701/1771040002_HoangAnh/index.html
+5. https://thanhtung-khmt-1701.github.io/ThanhTung-KHMT-1701/1771040014_LienHoan/index.html
+6. About us: https://thanhtung-khmt-1701.github.io/ThanhTung-KHMT-1701/contact.html
