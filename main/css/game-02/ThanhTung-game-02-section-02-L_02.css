@@ -1,0 +1,17 @@
+div[data-alias="L_02-container"]
+{
+    background-color: antiquewhite;
+}
+
+div[data-alias="L_02-item"]
+{
+    display: block;
+    padding: 1em;
+    border: 0.5em double white;
+    margin: 0.1em;
+    border-radius: 1em;
+
+    background-color: skyblue;
+    color: white;
+    text-align: center;
+}

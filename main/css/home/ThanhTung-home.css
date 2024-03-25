@@ -1,0 +1,138 @@
+*
+{
+    box-sizing: border-box;
+}
+
+fieldset
+{
+    padding: 50px;
+    border-width: 5px;
+
+    margin: 0 0 10px;
+
+    background-color: ghostwhite;
+}
+
+legend
+{
+    text-align: center;
+}
+
+div[class="LIST-GAME"]
+{
+    max-width: 50%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    display: grid;
+    grid-template-columns: 1fr;
+
+    row-gap: 50px;
+
+    align-content: center;
+    justify-content: center;
+}
+
+div[class="content"]
+{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+
+    align-content: center;
+    justify-content: center;
+}
+
+div[class^="tutorial"]
+{
+    padding: 5%;
+    border-radius: 15px;
+}
+
+div[class="tutorial 01"]
+{
+    background-color: orange;
+}
+div[class="tutorial 02"]
+{
+    background-color: deepskyblue;
+}
+div[class="tutorial 03"]
+{
+    background-color: limegreen;
+}
+div[class="tutorial 04"]
+{
+    background-color: mediumpurple;
+}
+
+li
+{
+    color: black;
+    margin-bottom: 5px;
+}
+
+button[class="button"]
+{
+    padding: 2%;
+    width: 100%;
+
+    font-size: 1.5rem;
+    font-family: "Times New Roman", serif;
+
+    border: 10px double white;
+}
+
+button[class="button"]:focus
+{
+    outline: none;
+}
+
+button[class="button"]:hover
+{
+    animation-name: A;
+    animation-duration: 1s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+@keyframes A
+{
+    0%
+    {
+        transform: scale(0.9);
+    }
+    100%
+    {
+        background-color: forestgreen;
+        transform: scale(1);
+    }
+}
+
+table[class="table"]
+{
+    background-color: ghostwhite;
+    text-align: center;
+
+    padding: 10px;
+}
+
+th
+{
+    font-weight: normal;
+    padding: 10px;
+    background-color: forestgreen;
+}
+
+tr
+{
+    background-color: mediumpurple;
+    color: white;
+}
+
+td
+{
+    padding: 10px;
+    background-color: lightgreen;
+    color: black;
+}

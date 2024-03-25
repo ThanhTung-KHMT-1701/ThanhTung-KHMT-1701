@@ -1,0 +1,17 @@
+@media screen and (max-width: 1700px)
+{
+    div[data-alias="ThanhTung-game-02-container"]
+    {
+        grid-template-areas:
+        "L_01 L_01 L_01"
+        "STT  STT  STT"
+        "L_02 L_02 L_02"
+        "BTN BTN BTN"
+        "L_03 L_03 L_03";
+    }
+}
+
+div[data-alias="ThanhTung-game-02-container"] > *
+{
+
+}

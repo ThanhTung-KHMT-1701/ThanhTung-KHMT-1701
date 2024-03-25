@@ -1,0 +1,13 @@
+div[data-alias="ThanhTung-game-01-button"]
+{
+    box-sizing: border-box;
+
+    background-color: orange;
+    color: white;
+
+    border-radius: 10px;
+    padding: calc(max(15px, 2%));
+
+    position: absolute;
+    top: 5px;
+}

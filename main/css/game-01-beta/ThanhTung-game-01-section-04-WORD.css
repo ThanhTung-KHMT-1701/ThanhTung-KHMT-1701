@@ -1,0 +1,16 @@
+div[data-alias="ThanhTung-game-01-word"]
+{
+    background-color: black;
+    color: white;
+
+    border-color: whitesmoke;
+
+    padding: 1rem;
+    margin: 1%;
+    text-align: center;
+    text-transform: uppercase;
+
+    width: fit-content;
+
+    border-radius: 10px;
+}

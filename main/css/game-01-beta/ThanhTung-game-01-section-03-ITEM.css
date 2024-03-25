@@ -1,0 +1,13 @@
+div[data-alias="ThanhTung-game-01-item"]
+{
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 2.5%;
+
+    background-color: forestgreen;
+}
