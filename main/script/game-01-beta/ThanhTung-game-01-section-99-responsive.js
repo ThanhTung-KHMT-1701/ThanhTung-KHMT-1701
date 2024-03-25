@@ -1,5 +1,5 @@
 let HOME = document.createElement("img")
-HOME.src = "/main/image/icon-home.png"
+HOME.src = "icon-home.png"
 HOME.alt = "Home"
 
 Object.assign(HOME.style,
@@ -18,7 +18,7 @@ HOME.onclick = function ()
 document.body.appendChild(HOME)
 
 let CONTACT = document.createElement("img")
-CONTACT.src = "/main/image/icon-contact.png"
+CONTACT.src = "icon-contact.png"
 CONTACT.alt = "Home"
 
 Object.assign(CONTACT.style,
