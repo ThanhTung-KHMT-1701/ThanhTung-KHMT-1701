@@ -7,7 +7,7 @@ let HOME = document.createElement("img")
 			position: "sticky",
 			top: "5px",
 			left: "5px",
-			maxWidth: "2.5%"
+			width: `clamp(2rem, 5vw, 3rem)`
 		})
 
 	HOME.onclick = function ()
@@ -26,7 +26,7 @@ let CONTACT = document.createElement("img")
 			position: "sticky",
 			top: "5px",
 			right: "5px",
-			maxWidth: "2.5%"
+			width: `clamp(2rem, 5vw, 3rem)`
 		})
 
 	CONTACT.onclick = function ()
