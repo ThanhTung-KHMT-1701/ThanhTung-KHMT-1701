@@ -16,3 +16,22 @@ let HOME = document.createElement("img")
 	}
 	
 	document.body.appendChild(HOME)
+
+let CONTACT = document.createElement("img")
+	CONTACT.src = "/main/image/icon-contact.png"
+	CONTACT.alt = "Contact"
+
+	Object.assign(CONTACT.style,
+		{
+			position: "sticky",
+			top: "5px",
+			right: "5px",
+			maxWidth: "2.5%"
+		})
+
+	CONTACT.onclick = function ()
+	{
+		open("ThanhTung-contact.html", "_self")
+	}
+
+document.body.appendChild(CONTACT)
