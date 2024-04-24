@@ -23,4 +23,4 @@
 
 >Các trang còn lại, chúng tôi đã thiết lập chế độ bảo mật để hạn chế việc thu thập dữ liệu trái phép từ bên ngoài.
 
->Để có thể sử dụng được những trang web đó, bạn cần nhập mật khẩu là "Mã số sinh viên" của tác giả Project này! (Are you humnan right?) ^_^
+>Để có thể sử dụng được những trang web đó, bạn cần nhập mật khẩu là "Mã số sinh viên" của tác giả Project này! (Are you hunan right?) ^_^
